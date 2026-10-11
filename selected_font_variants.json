@@ -351,7 +351,9 @@
       "门": "extracted_instances/门/2号线_南稍门_2.png"
     },
     "3号线": {
-      "寺": "extracted_instances/寺/3号线_青龙寺_2.png"
+      "寺": "extracted_instances/寺/3号线_青龙寺_2.png",
+      "沙": "extracted_instances/沙/3号线_延兴门（沙坡）_4.png",
+      "坡": "extracted_instances/坡/3号线_延兴门（沙坡）_5.png"
     },
     "4号线": {
       "路": "extracted_instances/路/4号线_凤城十二路_4.png",

@@ -10055,5 +10055,25 @@
     "out_path": "extracted_instances\\龙\\5号线_青龙寺_1.png",
     "width": 207,
     "height": 210
+  },
+  {
+    "char": "沙",
+    "line": "3号线",
+    "station": "延兴门（沙坡）",
+    "char_index": 4,
+    "img_path": "source_photos/21a4462309f7905298226a5300aec0ca7bcb0a467f13.webp",
+    "out_path": "extracted_instances\\沙\\3号线_延兴门（沙坡）_4.png",
+    "width": 200,
+    "height": 221
+  },
+  {
+    "char": "坡",
+    "line": "3号线",
+    "station": "延兴门（沙坡）",
+    "char_index": 5,
+    "img_path": "source_photos/21a4462309f7905298226a5300aec0ca7bcb0a467f13.webp",
+    "out_path": "extracted_instances\\坡\\3号线_延兴门（沙坡）_5.png",
+    "width": 227,
+    "height": 222
   }
 ]

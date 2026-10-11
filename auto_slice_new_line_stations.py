@@ -68,6 +68,9 @@ def load_names_for_folder(folder_path, line_name, img_files):
 
     return names_map
 
+def character_alpha_mask(char_gray):
+    return np.clip((242 - char_gray.astype(float)) / (242 - 60) * 255, 0, 255).astype(np.uint8)
+
 def slice_single_characters(img_path, station_name, line_name, out_root):
     chars = [c for c in station_name if '\u4e00' <= c <= '\u9fa5']
     n_chars = len(chars)
@@ -185,7 +188,7 @@ def slice_single_characters(img_path, station_name, line_name, out_root):
 
         char_crop = img_rgb[cy1:cy2, cx1:cx2]
         char_gray = gray[cy1:cy2, cx1:cx2]
-        alpha = np.clip((242 - char_gray.astype(float)) / (242 - 60) * 255, 0, 255).astype(np.uint8)
+        alpha = character_alpha_mask(char_gray)
 
         rgba = np.zeros((char_crop.shape[0], char_crop.shape[1], 4), dtype=np.uint8)
         rgba[:, :, :3] = 16
